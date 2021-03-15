@@ -3,7 +3,7 @@ import colors from 'colors'
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/ecommerceDB", {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ecommerceDB", {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useCreateIndex: true
